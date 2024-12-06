@@ -1,0 +1,33 @@
+1. Time is of the essence, you have 1 hour.
+2. You will have to develop a Vue3 application:
+     a. Has German based plate validation (district validation not needed but overall format should align) 
+     b. has full CRUD functionality and fully integrated with Supabase,
+     c. where Typescript is a must.
+3. Host and serve the application using AWS CloudFront.
+4. Any use of material is allowed (official documentations, medium articles, youtube videos etc)
+
+
+---
+German plate validation:
+- City/Region 
+- Dash/Whitespace
+- Random letter & numbers
+
+
+Examples:
+WOB-ZK 1234
+
+CityRegion: Min 1, Max 3 Alphanumeric
+Dash/Whitespace: Min 1, Max 1
+Random letter: Min 1, Max 2 random alphabets
+Random numbers: Min 1, Max 4 random numbers
+
+--- Database password: vDdg3Aqb5H9oi7km
+
+-- DB Schema:
+
+LicensePlates:
+- id: serial
+- licensePlate: text
+- createdAt: timestamp
+- updatedAt: timestamp
